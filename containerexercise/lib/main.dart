@@ -19,30 +19,33 @@ class myApp extends StatelessWidget {
           children: <Widget>[
             Expanded(
                           child: Container(
-                  //padding: EdgeInsets.all(50.0),
                   margin: EdgeInsets.fromLTRB(0, 30.0, 50.0, 30.0),
-                  //margin: EdgeInsets.all(50.0),
-                  //margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
                   height: double.infinity,
                   width: 100.0,
                   color: Colors.red,
                 ),
             ),
-              Container(
-                //padding: EdgeInsets.all(50.0),
-                //margin: EdgeInsets.fromLTRB(10.0, 0.0, 30.0, 20.0),
-                //margin: EdgeInsets.all(50.0),
-                //margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
-                height: 100.0,
-                width: 100.0,
-                color: Colors.yellow,
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+
+                children: <Widget>[
+                  Container( 
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.yellow,
+                    
+                  ),
+                  Container( 
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.green,
+                  ),
+                ],
               ),
               Expanded(
                               child: Container(
-                  //padding: EdgeInsets.all(50.0),
                   margin: EdgeInsets.fromLTRB(50.0, 30.0, 0.0, 30.0),
-                  //margin: EdgeInsets.all(50.0),
-                  //margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
                   height: double.infinity,
                   width: 100.0,
                   color: Colors.blue,
